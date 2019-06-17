@@ -1,0 +1,6 @@
+source "https://rubygems.org"
+
+gem "dry-validation"
+gem "dry-types"
+gem "dry-logic"
+gem "reform", '~> 2.2'
