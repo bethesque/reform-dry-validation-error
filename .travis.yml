@@ -1,4 +1,6 @@
 language: ruby
 script:
+  - BUNDLE_GEMFILE=works/Gemfile bundle install
   - BUNDLE_GEMFILE=works/Gemfile bundle exec ruby run.rb
+  - BUNDLE_GEMFILE=does-not-work/Gemfile bundle install
   - BUNDLE_GEMFILE=does-not-work/Gemfile bundle exec ruby run.rb
